@@ -18,7 +18,7 @@ int main()
     the upper limit has been set to 2. */
     for (int i = 1; i <= 2; i++)
     {
-        if (fin1.eof() != 0)
+        if (fin1.eof() != 0)  // eof() method returns non-zero (true) value when end-of-file is reached.
         {
             cout << "Exit from Country \n";
             exit(1);
