@@ -1,4 +1,7 @@
+/* Program that checks whether a given number is prime or not. */
+
 #include <iostream>
+
 using namespace std;
 
 bool check_for_prime(int n)
@@ -15,7 +18,8 @@ bool check_for_prime(int n)
     /* Since factors of a number come in pairs,
     if x <= y in a pair (x,y) for a number n,
     x*x <= n */
-    for (int i = 5; i * i <= n; i += 6)
+
+    for (int i = 5; i * i <= n; i += 6)  // For prime numbers between 5 and 25, the loop doesn't even run, thereby returning true.
     {
         if (n % i == 0 || n % (i + 2) == 0)
             return false;

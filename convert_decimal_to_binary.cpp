@@ -17,10 +17,12 @@ void decimal_to_binary_bitwise(int n)
     while (n)
     {
         // cout << "\nInside while";
+        // Writing if (n & 1) is equivalent to writing if (n % 2 == 1)
         if (n & 1) // Performing the AND operation with the LSB.
             str = str + '1';
         else
             str = str + '0';
+        // Writing n = n >> 1 is equivalent to writing n = n / 2
         n = n >> 1; // Right shift the number (its binary equivalent) by 1 bit.
     }
 

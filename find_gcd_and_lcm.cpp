@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 /* Since we are using Euclid's algorithm, the assumption is that b is smaller than a.*/
