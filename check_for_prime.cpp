@@ -33,3 +33,17 @@ int main()
     cout << "Is 169 a prime number? " << check_for_prime(169);
     return 0;
 }
+
+/* 
+An application of this program is found in the problem statement where given a number N, we need to print 
+the count of all numbers <= N that have exactly 3 divisors. 
+
+Solution
+--------
+
+A number that has exactly two divisors is a prime number.
+
+Therefore, all the squares of prime numbers smaller than or equal to N are to be counted.
+i.e. if i is a prime number and i*i <= N, then the i*i has exactly 3 divisors.
+
+*/
