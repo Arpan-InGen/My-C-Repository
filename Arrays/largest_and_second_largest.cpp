@@ -16,8 +16,8 @@ void findLargestElements(int arr[], int n)
 
         if (arr[i] > arr[largest])
         {
-            res = largest;
-            largest = i;
+            res = largest; // arr[res] would be holding the second largest element
+            largest = i;   // arr[largest] would be holding the largest element
         }
 
         else if (arr[i] != arr[largest]) // This is applicable when arr[i] < arr[largest] and also when we
@@ -33,7 +33,7 @@ void findLargestElements(int arr[], int n)
 
     // If all elements of the array are same, then the value of largest remains 0.
 
-    cout << "\n\nThe largest element is " << arr[largest];
+    cout << "\nThe largest element is " << arr[largest];
 
     if (res != -1)
         cout << "\nThe second largest element is " << arr[res];

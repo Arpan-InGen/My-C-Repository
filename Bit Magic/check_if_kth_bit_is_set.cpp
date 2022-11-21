@@ -30,8 +30,7 @@ int main()
 
     /* My solution using loop
     while (num)
-    {   //cout<<"\n"<<num;
-        //cout<<"\n"<<count;
+    {  
         if (count == k)
         {
             if (num & 1)
