@@ -9,9 +9,9 @@ void decimal_to_binary_bitwise(int n)
     string str;
 
     /*
-    While testing, it has been seen that the while loop runs exactly
-    the number of times the length of the binary value.
-    e.g. for 64, i.e. 1000000, it runs 7 times.
+        While testing, it has been seen that the while loop runs exactly
+        the number of times the length of the binary value.
+        e.g. for 64, i.e. 1000000, it runs 7 times.
     */
 
     while (n)

@@ -1,21 +1,19 @@
 /*
+    Program to find the majority element, i.e. an element that appears more than
+    n/2 times in an array of size n.
 
-Program to find the majority element, i.e. an element that appears more than
-n/2 times in an array of size n.
+    We would be using Boyer-Moore Majority Voting Algorithm to solve this problem.
 
-We would be using Boyer-Moore Majority Voting Algorithm to solve this problem.
+    When there is a majority number in an array, there would be instances of consecutive appearances
+    of that number and to account for that, we use statements like
 
-When there is a majority number in an array, there would be instances of consecutive appearances
-of that number and to account for that, we use statements like
+    if (arr[i] == candidate)
+        votes++;
 
-if (arr[i] == candidate)
-    votes++;
-
-Whenever 'votes' is decremented to 0, we take a new candidate for consideration. This candidate may not be
-the majority element however, at the end of the first for loop execution, the variable 'candidate' will
-hold the majority element if there exists one. If is is not a majority element, the subsequent
-for loop will perform a check and return -1.
-
+    Whenever 'votes' is decremented to 0, we take a new candidate for consideration. This candidate may not be
+    the majority element however, at the end of the first for loop execution, the variable 'candidate' will
+    hold the majority element if there exists one. If is is not a majority element, the subsequent
+    for loop will perform a check and return -1.
 */
 
 #include <iostream>

@@ -1,10 +1,12 @@
-/* Program to find the maximum subarray sum in an array.
+/* 
+    Program to find the maximum subarray sum in an array.
 
-In the array - {1, -2, 3, -1, 2}, the subarray with the maximum sum is {3, -1, 2}
-where the numbers add up to 4. For every element arr[i] from index 1 to n-1, we need to take it account
-the sum -> arr[0] + arr[1] + ... + arr[i] and arr[i] to determine which is greater.
-If the former is greater, continue with the same subarray.
-If the latter is greater, ignore the previous subarray and start a new one from index i.  */
+    In the array - {1, -2, 3, -1, 2}, the subarray with the maximum sum is {3, -1, 2}
+    where the numbers add up to 4. For every element arr[i] from index 1 to n-1, we need to take it account
+    the sum -> arr[0] + arr[1] + ... + arr[i] and arr[i] to determine which is greater.
+    If the former is greater, continue with the same subarray.
+    If the latter is greater, ignore the previous subarray and start a new one from index i.  
+*/
 
 #include <iostream>
 

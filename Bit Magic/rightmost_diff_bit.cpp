@@ -1,32 +1,32 @@
 /*
 
-Given two numbers M and N, we have to find the position of the rightmost different bit
-in the binary representation of the numbers.
+    Given two numbers M and N, we have to find the position of the rightmost different bit
+    in the binary representation of the numbers.
 
-Example
--------
+    Example
+    -------
 
-Input: M = 52, N = 4
-Output: 5
-Explanation: Binary representation of the given numbers are: 110100 and 0100,
-5th-bit from right is different.
+    Input: M = 52, N = 4
+    Output: 5
+    Explanation: Binary representation of the given numbers are: 110100 and 0100,
+    5th-bit from right is different.
 
-Explanation behind the solution
--------------------------------
+    Explanation behind the solution
+    -------------------------------
 
-We know that for an XOR operation between two numbers M and N, for the different bits at their
-respective positions, we would get a 1.
+    We know that for an XOR operation between two numbers M and N, for the different bits at their
+    respective positions, we would get a 1.
 
-1. Using the example above, for M ^ N, we get 48 (i.e. 110000).
+    1. Using the example above, for M ^ N, we get 48 (i.e. 110000).
 
-2. Since there are two 1s here, we have to use 2's complement in order to remove the extra 1 
-(or 1s depending on the scenario) and find the position of the rightmost 1.
-So, if op = 110000, 2's complement of op, i.e. -op = 010000 (16).
+    2. Since there are two 1s here, we have to use 2's complement in order to remove the extra 1 
+    (or 1s depending on the scenario) and find the position of the rightmost 1.
+    So, if op = 110000, 2's complement of op, i.e. -op = 010000 (16).
 
-3. Now, we need to perform a bitwise AND of op and -op to get 10000.
+    3. Now, we need to perform a bitwise AND of op and -op to get 10000.
 
-4. Since the result is a power of 2, we can use the log2 function to get the answer we need.
-Therefore, log2(10000) or log2(16) is 4. But as the set bit is at the 5th position, we need to add 1 to our result.
+    4. Since the result is a power of 2, we can use the log2 function to get the answer we need.
+    Therefore, log2(10000) or log2(16) is 4. But as the set bit is at the 5th position, we need to add 1 to our result.
 
 */
 

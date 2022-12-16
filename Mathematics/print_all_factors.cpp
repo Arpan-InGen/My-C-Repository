@@ -10,15 +10,19 @@ void printFactors(int n)
 
     cout << "\nFactors of " << n << " are: ";
 
-    /* Since factors of a number come in pairs,
-    if x <= y in a pair (x,y) for a number n,
-    x*x <= n */
+    /* 
+        Since factors of a number come in pairs,
+        if x <= y in a pair (x,y) for a number n,
+        x*x <= n 
+    */
 
-    /* Let's take an example.
-    If n= 25, then the 1st for loop will run from i = 1 to i = 4.
-    At the end of the 1st for loop, i = 5. Hence, the second for loop will run from i = 5 to i = 1.
+    /* 
+        Let's take an example.
+        If n= 25, then the 1st for loop will run from i = 1 to i = 4.
+        At the end of the 1st for loop, i = 5. Hence, the second for loop will run from i = 5 to i = 1.
 
-    Therefore, first for loop would print 1 and the second for loop would print 5 and 25 as the factors.*/
+        Therefore, first for loop would print 1 and the second for loop would print 5 and 25 as the factors.
+    */
 
     for (i = 1; i * i < n; i++)
     {

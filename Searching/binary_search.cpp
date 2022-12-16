@@ -20,7 +20,7 @@ int binary_search(int arr[], int size, int num)
             low = mid + 1;
     }
 
-    return -1;
+    return -1; // return -1 if the number num is not present in the array.
 }
 
 int main()

@@ -44,13 +44,13 @@ int main()
 
 /*
 
-Let's trace through an iteration
+    Let's trace through an iteration
 
-arr[] = {10,20,20,30,30}, n = 5, new_size = 1
+    arr[] = {10,20,20,30,30}, n = 5, new_size = 1
 
-Iteration 1: i= 1, new_size= 2 arr[]: 10 20 20 30 30        
-Iteration 2: i= 2, new_size= 2 arr[]: 10 20 20 30 30        
-Iteration 3: i= 3, new_size= 3 arr[]: 10 20 30 30 30        
-Iteration 4: i= 4, new_size= 3 arr[]: 10 20 30 30 30   
+    Iteration 1: i= 1, new_size= 2 arr[]: 10 20 20 30 30        
+    Iteration 2: i= 2, new_size= 2 arr[]: 10 20 20 30 30        
+    Iteration 3: i= 3, new_size= 3 arr[]: 10 20 30 30 30        
+    Iteration 4: i= 4, new_size= 3 arr[]: 10 20 30 30 30   
 
 */
